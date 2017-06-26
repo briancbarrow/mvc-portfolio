@@ -88,7 +88,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\bball-battle.PNG" />
+    <Content Include="Content\images\bballdata.PNG" />
+    <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\favicon.jpg" />
+    <Content Include="Content\images\fcc-directory.PNG" />
+    <Content Include="Content\images\meetupFinder1.png" />
+    <Content Include="Content\images\Pomodoro.PNG" />
     <Content Include="Content\images\profile1.jpg" />
+    <Content Include="Content\images\Simon.PNG" />
+    <Content Include="Content\images\tribute.PNG" />
     <Content Include="Content\styles\main.css">
       <DependentUpon>main.scss</DependentUpon>
     </Content>
@@ -120,6 +129,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Portfolio\Projects.cshtml" />
+    <None Include="Properties\PublishProfiles\brianb-portfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
