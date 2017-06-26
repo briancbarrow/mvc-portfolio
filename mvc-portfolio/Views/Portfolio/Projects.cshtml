@@ -1,0 +1,36 @@
+﻿@model mvc_portfolio.Models.Project[]
+@{
+    ViewBag.Title = "Projects";
+}
+
+<h2>Projects</h2>
+
+<div id="projects">
+    @foreach (var project in Model)
+    {
+        <div class="project">
+            <a class="project-link" target="_blank" href="@project.DemoPath">
+                <h3 class="project-name">@project.Title</h3>
+                <img class="project-image" src="/Content/images/@project.ImagePath" alt="@project.Title" />
+            </a>
+            <ul>
+                <li class="project-list">
+                    <a class="github-link" target="_blank" href="@project.DemoPath"><i aria-hidden="true" class="fa fa-code"></i> Demo</a>
+                </li>
+                <li class="project-list">
+                    <a class="github-link" target="_blank" href="@project.RepoPath"><i aria-hidden="true" class="fa fa-github"></i> Code</a>
+                </li>
+            </ul>
+            <hr />
+            <div class="project-tech">
+                <h3>Technologies used:</h3>
+                <ul>
+                    @foreach (var tech in @project.TechUsed)
+                    {
+                        <li class="tech">@tech</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    }
+</div>
