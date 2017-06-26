@@ -12,5 +12,10 @@ namespace mvc_portfolio.Controllers
         {
             return View();
         }
+
+        public ActionResult Index()
+        {
+            return View();
+        }
     }
 }

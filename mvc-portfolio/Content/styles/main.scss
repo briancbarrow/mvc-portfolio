@@ -27,6 +27,7 @@ body {
     // font-family: 'Poppins', sans-serif;
     // font-family: 'Bitter', serif;
     color: $black;
+    font-size: 18px;
 }
 
 hr {
@@ -76,7 +77,19 @@ main {
         height: 30px;
         margin: 5px 5px 5px 5px;
         transition: 0.15s background-color ease-in-out;
-        font-size: 15px;
+        font-size: 16px;
+        display: inline-flex;
+        padding: 0px 6px;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+        }
 
         &:hover {
             background-color: $dark-gray;
